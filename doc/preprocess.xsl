@@ -18,9 +18,9 @@
     along with this program.  If not, see http://www.gnu.org/licenses/.
 -->
 <xsl:stylesheet
-  version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:str="http://exslt.org/strings">
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        version="1.0"
+>
 
   <xsl:output
     doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -42,7 +42,7 @@
   <xsl:template match="//*[@class='printfooter']"/>
   <xsl:template match="//*[@class='catlinks']"/>
 
-  <!-- remove comments -->
+  <!-- remove _comments -->
   <xsl:template match="comment()"/>
 
   <!-- remove external links to unused resources -->
